@@ -1,0 +1,10 @@
+select * from data_src where journal = 'Food Chemistry';
+select long_desc, shrt_desc from food_des where manufacname = 'Kellogg, Co.';
+select count (*) from data_src where year > 2000;
+select count (*) from food_des where pro_factor > 1.5 and fat_factor < 5;
+select * from data_src where year = 1990 and journal = 'Cereal Foods World';
+select * from nutr_def where units = 'kj' or units = 'kcal';
+select * from data_src where year = 2000 or journal = 'FoodChemistry';
+select * from data_src where year between 1990 and 2000 and journal in ('J. Food Protection', 'Food Chemistry');
+select count (*) from weight where gm_wgt between 50 and 75;
+select * from data_src where year in (1960, 1970, 1980, 1990, 2000);
